@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bleu:#11b8e2;
+    --orange : #de891b;
+}
+
+body{
+    font-family: 'Comfortaa';
+    padding : 0 10%;
+}
+
+.txt-orange{
+    color: var(--orange) ;
+}
+
+.txt-bleu{
+    color: var(--bleu);
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand p{
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.nav-links a{
+    margin: 0 10px;
+    color: var(--bleu);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .5s;
+}
+
+.nav-links a:hover{
+    color: var(--orange);
+}
+
+nav button{
+    border: none;
+    outline: none;
+    background-color: rgba(17, 184, 226,.2);
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-family: 'Comfortaa';
+}
+
+.hero-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 54px);
+}
+
+.presentation-text{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.hero-banner img{
+    width: 40%;
+}
+
+.hero-banner button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-family: 'Comfortaa';
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-about-us{
+    color: var(--orange);
+    background-color: white;
+    border: 1px solid var(--orange) !important;
+    margin-right: 10px;
+    transition: all .5s;
+}
+
+.btn-services{
+    background-color: var(--bleu);
+    color: white;
+    margin-left: 10px;
+    transition: all .5s;
+}
+
+.btn-about-us:hover{
+    background-color: var(--orange);
+    color: white;
+}
+
+.about-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-us img{
+    width: 30%;
+}
+
+.about-us .about-us-text{
+    width:60%;
+}
+
+.about-us-text h5{
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.about-us-text h3{
+    margin: 5px 0;
+    font-family: 'Poppins';
+}
+
+.about-us-text p{
+    margin: 0;
+    text-align: justify;
+}
