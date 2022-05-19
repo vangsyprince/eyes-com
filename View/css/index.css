@@ -240,6 +240,6 @@ nav button{
 .testimonial{
     margin-top: 100px;
     height: 100vh;
-    background-image: url(/View/img/world-map.png);
+    background-image: url(View/img/world-map.png);
     background-size: cover;
 }
