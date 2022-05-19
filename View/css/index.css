@@ -3,11 +3,14 @@
 :root{
     --bleu:#11b8e2;
     --orange : #de891b;
+    --title : #2b2b58;
+    --txt : #a9aab1;
 }
 
 body{
     font-family: 'Comfortaa';
     padding : 0 10%;
+    color: var(--txt);
 }
 
 .txt-orange{
@@ -16,6 +19,10 @@ body{
 
 .txt-bleu{
     color: var(--bleu);
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--title);
 }
 
 
@@ -109,6 +116,7 @@ nav button{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .about-us img{
@@ -116,7 +124,7 @@ nav button{
 }
 
 .about-us .about-us-text{
-    width:60%;
+    width:50%;
 }
 
 .about-us-text h5{
@@ -132,4 +140,106 @@ nav button{
 .about-us-text p{
     margin: 0;
     text-align: justify;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+.services{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-text{
+    width: 50%;
+}
+
+.services-text h5{
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.services-text h3{
+    text-transform: capitalize;
+    margin: 5px 0;
+    font-family: 'Poppins';
+}
+
+.services-text p{
+    font-size: 13px;
+    text-align: justify;
+    margin: 0;
+    line-height: 20px;
+}
+
+.services-cards{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.services-card{
+    box-shadow: 2px 2px 5px #c4c4c4;
+    width: 35%;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.services-card:nth-child(2), .services-card:nth-child(4){
+    margin-left: 30px;
+} 
+
+.card-icon{
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .services-card:nth-child(1) .card-icon{
+     color: #11b8e2;
+    background-color: rgba(17, 184, 226,.2);
+}
+
+.services-card:nth-child(2) .card-icon{
+    color: #de891b;
+   background-color: rgba(222, 137, 27,.2);
+}
+
+.services-card:nth-child(3) .card-icon{
+    color: #3fc67f;
+   background-color: rgba(63, 198, 127,.2);
+}
+
+
+
+.services-card:nth-child(4) .card-icon{
+    color: #77230e;
+   background-color: rgba(119, 35, 14,.2);
+}
+
+.services-card h6{
+    margin: 10px 0 0 0;
+    font-family: 'Poppins';
+}
+
+.services-card .card-text p{
+    font-size: 10px;
+    text-align: justify;
+
+}
+
+.testimonial{
+    margin-top: 100px;
+    height: 100vh;
+    background-image: url(/View/img/world-map\ \(1\).png);
+    background-size: cover;
 }
